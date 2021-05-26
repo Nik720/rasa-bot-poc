@@ -7,7 +7,6 @@ var fs = require('fs');
 var _ = require('lodash');
 var redis = require('redis');
 var LOG = require('./log/logger')
-var literals = require('./config/literals')
 var config = require('./config/config')
 const dateFormat = require('dateformat')
 var RasaCoreController = require('./controllers/rasaCoreController')
