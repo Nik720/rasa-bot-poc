@@ -1,0 +1,101 @@
+{
+  "start": {
+    "id": "start",
+    "text": "Hello, I am Tara! \n I am your DIKSHA guide \n Please select your preference from the options I provide or type your query directly.",
+    "WA_text": "",
+    "children": [
+      {
+        "id": "digitalContent",
+        "title": "Digital content",
+        "payload": "/sunbird_bot{\"sunbird_object\": \"digitalContent\"}",
+        "children": {
+          "text": "What content would you like to explore?",
+          "children": [
+            {
+              "id": "DGC_textbookVideo",
+              "title": "Textbook videos & practice questions",
+              "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_textbookVideo\"}",
+              "children": {
+                "text": "Tell me which board you belong to",
+                "WA_text": "Tell me which board you belong to WhatsApp",
+                "children": [
+                  {
+                    "id": "DGC_CBSE",
+                    "title": "CBSE",
+                    "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_CBSE\"}",
+                    "children": {
+                      "text": "Please visit: DIKSHA CBSE\nSelect the Medium and Class to view relevant subject textbook on the board website."
+                    }
+                  },
+                  {
+                    "id": "DGC_state_board",
+                    "title": "State Board",
+                    "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_state_board\"}",
+                    "children": {
+                      "text": "Which state board do you belong to?",
+                      "children": [
+                        {
+                          "title": "Tamilnadu",
+                          "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_Tamilnadu\"}"
+                        },
+                        {
+                          "title": "Karnataka",
+                          "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_Karnataka\"}"
+                        },
+                        {
+                          "title": "Gujarat",
+                          "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_Gujarat\"}"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "DGC_criticalThinking",
+              "title": "Critical thinking questions",
+              "payload": "/sunbird_bot{\"sunbird_object\": \"DGC_criticalThinking\"}",
+              "children": {
+                "text": "Creative and Critical Thinking aims to ensure that students engage with interesting higher order competency questions and develop the skills of problem solving and critical thinking. You can click on the link below to access this week's questions  \n  Please visit: https://diksha.gov.in/play/collection/do_31290608850520473612338?contentType=TextBook&utm_source=Tara   \n Select the Subject to view relevant content on the page",
+                "WA_text": "WHATSAPP Creative and Critical Thinking aims to ensure that students engage with interesting higher order competency questions and develop the skills of problem solving and critical thinking. You can click on the link below to access this week's questions  \n  Please visit: https://diksha.gov.in/play/collection/do_31290608850520473612338?contentType=TextBook&utm_source=Tara   \n Select the Subject to view relevant content on the page"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "course",
+        "title": "Course",
+        "payload": "/sunbird_bot{\"sunbird_object\": \"course\"}",
+        "children": {
+          "text": "Select what you are looking for",
+          "children": [
+            {
+              "id": "CRS_take",
+              "title": "Take a course",
+              "payload": "/sunbird_bot{\"sunbird_object\": \"CRS_take\"}",
+              "children": {
+                "text": "Select the course you would like to take",
+                "children": [
+                  {
+                    "title": "State Course",
+                    "payload": "/sunbird_bot{\"sunbird_object\": \"CRS_state_course\"}"
+                  },
+                  {
+                    "title": "iGot Course",
+                    "payload": "/sunbird_bot{\"sunbird_object\": \"CRS_igot_course\"}"
+                  },
+                  {
+                    "title": "NISHTHA course",
+                    "payload": "/sunbird_bot{\"sunbird_object\": \"CRS_nishtha_course\"}"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
